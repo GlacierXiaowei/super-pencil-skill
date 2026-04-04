@@ -3,8 +3,13 @@
 Master skill for using Pencil MCP - loads core workflow and dispatches to specialized skills for editing `.pen` files safely.
 
 ## Installation
+### Option 1: Localskill Installation (Recommend)
 
-### Option 1: Install via npm
+```bash
+localskills install hdz4oUmc6k
+```
+
+### Option 2: Install via npm
 
 ```bash
 # Download and extract npm package
@@ -15,7 +20,7 @@ tar -xzf super-pencil-1.0.0.tgz
 cp -r package ~/.config/opencode/skills/super-pencil
 ```
 
-### Option 2: Install via GitHub
+### Option 3: Install via GitHub
 When running `npx skills add GlacierXiaowei/super-pencil --skill super-pencil`:
 
 1. You'll see a list of AI agents
@@ -30,17 +35,13 @@ When running `npx skills add GlacierXiaowei/super-pencil --skill super-pencil`:
 npx skills add GlacierXiaowei/super-pencil --skill super-pencil
 ```
 
-### Option 3: Manual Installation
+### Option 4: Manual Installation
 
 1. Clone or download this repository
 2. Copy the skill folder to your AI assistant's skills directory
 3. Restart your AI assistant
 
-### Option 4: Localskill Installation
 
-```bash
-localskills install super-pencil
-```
 ## Quick Start
 
 Once installed, load the skill in your AI assistant:
