@@ -1,0 +1,36 @@
+{
+  "name": "super-pencil",
+  "version": "1.0.0",
+  "description": "Master skill for using Pencil MCP - loads core workflow and dispatches to specialized skills",
+  "main": "SKILL.md",
+  "keywords": [
+    "skill",
+    "ai",
+    "pencil",
+    "mcp",
+    "design",
+    "drawing",
+    "pen-file",
+    "opencode"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GlacierXiaowei/super-pencil-skill.git"
+  },
+  "author": {
+    "name": "Glacier Xiaowei",
+    "email": "glacier_xiaowei@163.com",
+    "url": "https://github.com/GlacierXiaowei"
+  },
+  "license": "Apache-2.0",
+  "files": [
+    "SKILL.md",
+    "super-pencil-core/SKILL.md",
+    "super-pencil-antipatterns/SKILL.md",
+    "super-pencil-path-debugging/SKILL.md",
+    "super-pencil-troubleshooting/SKILL.md"
+  ],
+  "scripts": {
+    "install": "echo 'Skill installed successfully!'"
+  }
+}
