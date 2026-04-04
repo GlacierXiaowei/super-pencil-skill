@@ -20,7 +20,7 @@ tar -xzf super-pencil-1.0.0.tgz
 cp -r package ~/.config/opencode/skills/super-pencil
 ```
 
-### Option 3: Install via GitHub
+### Option 3: Install via npx
 When running `npx skills add GlacierXiaowei/super-pencil --skill super-pencil`:
 
 1. You'll see a list of AI agents
