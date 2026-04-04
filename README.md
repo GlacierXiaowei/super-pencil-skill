@@ -34,6 +34,19 @@ cp -r <path-to-super-pencil> ~/.config/opencode/skills/super-pencil
 ./install.sh
 ```
 
+### Option 4: Install via localskills.sh
+
+```bash
+# Install the CLI first
+npm install -g @localskills/cli
+
+# Login to localskills.sh
+localskills login
+
+# Install the skill
+localskills install super-pencil --target opencode
+```
+
 ## Quick Start
 
 Once installed, load the skill in your AI assistant:
