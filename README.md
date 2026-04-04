@@ -7,33 +7,40 @@ Master skill for using Pencil MCP - loads core workflow and dispatches to specia
 ### Option 1: Install via npm
 
 ```bash
-npm install -g super-pencil
+# Download and extract npm package
+npm pack super-pencil
+tar -xzf super-pencil-1.0.0.tgz
+
+# Copy to skills directory (Please find the installation location of the skill for your CLI platform by yourself.)
+cp -r package ~/.config/opencode/skills/super-pencil
 ```
 
-### Option 2: Manual Installation
+### Option 2: Install via GitHub
+When running `npx skills add GlacierXiaowei/super-pencil --skill super-pencil`:
 
-Copy the skill folder to your OpenCode skills directory:
+1. You'll see a list of AI agents
+2. Use `↑↓` to navigate, `Space` to select/deselect
+3. **Select only OpenCode** (or your preferred agent)
+4. Press `Enter` to confirm
 
-**Windows:**
-```powershell
-# Clone or download this repository
-# Then copy to skills directory
-Copy-Item -Path "<path-to-super-pencil>" -Destination "$env:USERPROFILE\.config\opencode\skills\super-pencil" -Recurse -Force
-```
+> **Tip:** Press `Space` first to deselect all, then select only OpenCode.
 
-**macOS/Linux:**
-```bash
-# Clone or download this repository
-# Then copy to skills directory
-cp -r <path-to-super-pencil> ~/.config/opencode/skills/super-pencil
-```
-
-### Option 3: Use install.sh script
 
 ```bash
-./install.sh
+npx skills add GlacierXiaowei/super-pencil --skill super-pencil
 ```
 
+### Option 3: Manual Installation
+
+1. Clone or download this repository
+2. Copy the skill folder to your AI assistant's skills directory
+3. Restart your AI assistant
+
+### Option 4: Localskill Installation
+
+```bash
+localskills install super-pencil
+```
 ## Quick Start
 
 Once installed, load the skill in your AI assistant:
