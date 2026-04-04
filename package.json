@@ -1,6 +1,6 @@
 {
   "name": "super-pencil",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Master skill for using Pencil MCP - loads core workflow and dispatches to specialized skills",
   "main": "SKILL.md",
   "keywords": [
@@ -15,8 +15,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/GlacierXiaowei/super-pencil-skill.git"
+    "url": "git+https://github.com/GlacierXiaowei/super-pencil-skill.git"
   },
+  "bugs": {
+    "url": "https://github.com/GlacierXiaowei/super-pencil-skill/issues"
+  },
+  "homepage": "https://github.com/GlacierXiaowei/super-pencil-skill#readme",
   "author": {
     "name": "Glacier Xiaowei",
     "email": "glacier_xiaowei@163.com",

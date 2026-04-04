@@ -10,8 +10,8 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Detect OS and determine skills directory
 if [[ "$OSTYPE" == "msys" ]] || [[ "$OSTYPE" == "win32" ]]; then
-    # Windows
-    SKILLS_DIR="$USERPROFILE/.config/opencode/skills"
+    # Windows (Git Bash/WSL)
+    SKILLS_DIR="$(cygpath -u "$USERPROFILE")/.config/opencode/skills"
     echo "Detected Windows system"
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     # macOS
