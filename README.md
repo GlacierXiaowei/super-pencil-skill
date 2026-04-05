@@ -3,49 +3,44 @@
 Master skill for using Pencil MCP - loads core workflow and dispatches to specialized skills for editing `.pen` files safely.
 
 ## Installation
-
-### Option 1: Install via npm
-
-```bash
-npm install -g super-pencil
-```
-
-### Option 2: Manual Installation
-
-Copy the skill folder to your OpenCode skills directory:
-
-**Windows:**
-```powershell
-# Clone or download this repository
-# Then copy to skills directory
-Copy-Item -Path "<path-to-super-pencil>" -Destination "$env:USERPROFILE\.config\opencode\skills\super-pencil" -Recurse -Force
-```
-
-**macOS/Linux:**
-```bash
-# Clone or download this repository
-# Then copy to skills directory
-cp -r <path-to-super-pencil> ~/.config/opencode/skills/super-pencil
-```
-
-### Option 3: Use install.sh script
+### Option 1: Localskill Installation (Recommend)
 
 ```bash
-./install.sh
+localskills install hdz4oUmc6k
 ```
 
-### Option 4: Install via localskills.sh
+### Option 2: Install via npm
 
 ```bash
-# Install the CLI first
-npm install -g @localskills/cli
+# Download and extract npm package
+npm pack super-pencil
+tar -xzf super-pencil-1.0.0.tgz
 
-# Login to localskills.sh
-localskills login
-
-# Install the skill
-localskills install super-pencil --target opencode
+# Copy to skills directory (Please find the installation location of the skill for your CLI platform by yourself.)
+cp -r package ~/.config/opencode/skills/super-pencil
 ```
+
+### Option 3: Install via npx
+When running `npx skills add GlacierXiaowei/super-pencil --skill super-pencil`:
+
+1. You'll see a list of AI agents
+2. Use `↑↓` to navigate, `Space` to select/deselect
+3. **Select only OpenCode** (or your preferred agent)
+4. Press `Enter` to confirm
+
+> **Tip:** Press `Space` first to deselect all, then select only OpenCode.
+
+
+```bash
+npx skills add GlacierXiaowei/super-pencil --skill super-pencil
+```
+
+### Option 4: Manual Installation
+
+1. Clone or download this repository
+2. Copy the skill folder to your AI assistant's skills directory
+3. Restart your AI assistant
+
 
 ## Quick Start
 
